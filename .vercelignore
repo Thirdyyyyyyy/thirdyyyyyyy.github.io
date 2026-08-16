@@ -1,0 +1,14 @@
+node_modules
+.next
+out
+.env
+.env.local
+.vercel
+tsconfig.tsbuildinfo
+
+# Local AI tooling (not part of the app)
+.claude
+.claude-flow
+.mcp.json
+commands
+skills
