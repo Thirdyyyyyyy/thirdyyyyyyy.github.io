@@ -74,7 +74,7 @@ function Nav() {
             <a
               key={item}
               href={`#${item}`}
-              className="rounded-full px-3.5 py-1.5 text-xs font-medium text-ink-muted transition hover:bg-canvas-hover hover:text-ink"
+              className="rounded-full px-3.5 py-1.5 text-xs font-medium capitalize text-ink-muted transition hover:bg-canvas-hover hover:text-ink"
             >
               {item}
             </a>
