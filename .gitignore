@@ -1,0 +1,23 @@
+node_modules
+.next
+out
+.env
+.env.local
+.DS_Store
+*.log
+.vercel
+next-env.d.ts
+tsconfig.tsbuildinfo
+
+# Local AI tooling (not part of the app)
+.claude/settings.local.json
+.mcp.json
+.claude-flow
+commands
+skills
+
+# Assembled Systems shared config (symlinks to ~/.claude-work)
+.claude/agents
+.claude/skills
+.claude/commands
+.claude/helpers

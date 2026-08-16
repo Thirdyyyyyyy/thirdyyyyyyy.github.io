@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body {
+  background: #f7f9fc;
+  color: #0f172a;
+}
+
+body {
+  background-image:
+    radial-gradient(
+      ellipse 60% 40% at 10% 0%,
+      rgba(147, 197, 253, 0.45),
+      transparent 60%
+    ),
+    radial-gradient(
+      ellipse 55% 40% at 90% 15%,
+      rgba(186, 230, 253, 0.4),
+      transparent 60%
+    ),
+    radial-gradient(
+      ellipse 50% 40% at 50% 55%,
+      rgba(147, 197, 253, 0.22),
+      transparent 60%
+    ),
+    radial-gradient(
+      ellipse 50% 40% at 50% 100%,
+      rgba(196, 181, 253, 0.3),
+      transparent 60%
+    );
+  background-attachment: fixed;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: radial-gradient(
+    rgba(15, 23, 42, 0.08) 1px,
+    transparent 1px
+  );
+  background-size: 22px 22px;
+  mask-image: radial-gradient(ellipse at center, black 15%, transparent 70%);
+  z-index: 0;
+}
+
+.text-gradient {
+  background: linear-gradient(120deg, #3b82f6 0%, #8b5cf6 50%, #06b6d4 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.card-hover {
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+.card-hover:hover {
+  border-color: rgba(147, 197, 253, 0.7);
+  box-shadow:
+    0 4px 20px rgba(59, 130, 246, 0.1),
+    0 2px 6px rgba(15, 23, 42, 0.06);
+  transform: translateY(-2px);
+}
+
+.orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(80px);
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+::selection {
+  background: #93c5fd;
+  color: #0f172a;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f7f9fc;
+}
+::-webkit-scrollbar-thumb {
+  background: #d5dcea;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b6c0d4;
+}
