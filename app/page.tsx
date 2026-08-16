@@ -55,8 +55,14 @@ function Nav() {
     <header className="fixed inset-x-0 top-0 z-50 border-b border-canvas-border/70 bg-canvas/70 backdrop-blur-xl">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 sm:px-8">
         <a href="#" className="group flex items-center gap-2.5">
-          <span className="relative flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-pastel-blue-dark to-pastel-lavender text-sm font-bold text-white shadow-glow">
-            H
+          <span className="relative h-9 w-9 shrink-0 overflow-hidden rounded-xl border border-canvas-border bg-canvas-soft shadow-soft">
+            <Image
+              src="/henry.jpg"
+              alt=""
+              fill
+              sizes="36px"
+              className="object-cover object-top"
+            />
           </span>
           <span className="text-sm font-semibold text-ink">
             Henry Hudieres
